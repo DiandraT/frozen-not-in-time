@@ -9,8 +9,8 @@ h1 {
 
 p {
   color: #c09;
-  transform: rotate(-6deg);
-  max-width: 20em;
+  transform: rotate(-5deg);
+  max-width: 19em;
 
 }
 
@@ -20,12 +20,157 @@ p {
 }
 
 .btn-ghost:hover {
-  color: #990073;
+  color: #c09;
   border: 3px solid #990073;
 }
 
 .banner {
   background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
   border-top: 10px solid #b3fbff;
-  overflow: hidden;
+  border-bottom: 10px solid #b3fbff;
+  padding-bottom: 6em;
+  padding-top: 6em;
+}
+
+.banner-content {
+  text-shadow: 1px 2px rgba(0, 0, 0, .25);
+  opacity: 0;
+  transform-origin: left center;
+  animation: blur 2s 800ms linear forwards;
+  animation-delay: 2s;
+}
+
+img {
+  margin-left: 12em;
+}
+
+.cherry {
+  animation: cherry 700ms linear forwards;
+  top: -1200px;
+  animation-delay: 2s;
+  left: calc(50% - 40px);
+  width: 80px;
+  z-index: 10;
+}
+
+.vanilla-fudge {
+  animation: fudge 600ms linear forwards;
+  top: -1200px;
+  animation-delay: 2s;
+  left: calc(50% - 80px);
+  width: 130px;
+  z-index: 9;
+}
+
+.chocolate-chip {
+  animation: chocolate-chip 500ms linear forwards;
+  top: -1200px;
+  animation-delay: 2s;
+  left: calc(50% - 70px);
+  width: 130px;
+  z-index: 8;
+}
+
+.mint-chip {
+  animation: mint-chip 400ms linear forwards;
+  top: -1200px;
+  animation-delay: 2s;
+  left: calc(50% - 90px);
+  width: 130px;
+  z-index: 7;
+}
+
+.cone {
+  animation: cone 300ms linear forwards;
+  top: -1200px;
+  animation-delay: 2s;
+  left: calc(50% - 90px);
+  width: 130px;
+  z-index: 11;
+}
+
+@keyframes blur {
+
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes cherry {
+
+  0% {
+    top: -1200px;
+  }
+
+  100% {
+    top: 10px;
+  }
+
+}
+
+@keyframes fudge {
+
+  0% {
+    top: -1200px;
+  }
+
+  100% {
+    top: 60px;
+  }
+
+}
+
+@keyframes chocolate-chip {
+
+  0% {
+    top: -1200px;
+  }
+
+  100% {
+    top: 140px;
+  }
+
+}
+
+@keyframes mint-chip {
+
+  0% {
+    top: -1200px;
+  }
+
+  100% {
+    top: 230px;
+  }
+
+}
+
+@keyframes cone {
+
+  0% {
+    top: -1200px;
+  }
+
+  100% {
+    top: 320px;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner {
+    padding-left: 10em;
+    padding-right: 9em;
+  }
+
+  .banner-content {
+    padding-top: 2em;
+  }
+
 }
