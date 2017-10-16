@@ -47,7 +47,7 @@ img {
 }
 
 .cherry {
-  top: -1000px;
+  top: -1400px;
   left: calc(70% - 80px);
   animation: cherry 700ms linear forwards;
   z-index: 10;
@@ -62,7 +62,7 @@ img {
 
 .chocolate-chip {
   top: -1000px;
-  left: calc(70% - 70px);
+  left: calc(70% - 80px);
   animation: chocolate-chip 500ms linear forwards;
   z-index: 8;
 }
@@ -97,11 +97,11 @@ img {
 @keyframes cherry {
 
   0% {
-    top: -1200px;
+    top: -1400px;
   }
 
   100% {
-    top: 10px;
+    top: -30px;
   }
 
 }
@@ -113,7 +113,7 @@ img {
   }
 
   100% {
-    top: 60px;
+    top: 50px;
   }
 
 }
@@ -125,7 +125,7 @@ img {
   }
 
   100% {
-    top: 140px;
+    top: 120px;
   }
 
 }
@@ -137,7 +137,7 @@ img {
   }
 
   100% {
-    top: 230px;
+    top: 200px;
   }
 
 }
@@ -149,7 +149,7 @@ img {
   }
 
   100% {
-    top: 320px;
+    top: 300px;
   }
 
 }
