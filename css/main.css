@@ -4,88 +4,80 @@ html {
 
 h1 {
   color: #990073;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
   transform: rotate(-10deg);
 }
 
 p {
   color: #c09;
-  transform: rotate(-5deg);
+  text-shadow: 1px 1px rgba(0, 0, 0, .5);
   max-width: 19em;
-
+  transform: rotate(-5deg);
 }
 
-.btn {
+.banner {
+  background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
+  overflow: hidden;
+  border-top: 6px solid #b3fbff;
+  border-bottom: 6px solid #b3fbff;
+  padding-bottom: 5em;
+}
+
+.banner-content {
+  opacity: 0;
+  transform-origin: left center;
+  animation: blur 2s 800ms linear forwards;
+  animation-delay: 3s;
+}
+
+.btn-ghost {
   color: #c09;
   border: 3px solid #990073;
+  text-decoration: none;
 }
 
 .btn-ghost:hover {
   color: #c09;
   border: 3px solid #990073;
-}
-
-.banner {
-  background: repeating-linear-gradient(-30deg, #c9fcff, #c9fcff 10px, #d4fdff 10px, #d4fdff 20px);
-  border-top: 10px solid #b3fbff;
-  border-bottom: 10px solid #b3fbff;
-  padding-bottom: 6em;
-  padding-top: 6em;
-}
-
-.banner-content {
-  text-shadow: 1px 2px rgba(0, 0, 0, .25);
-  opacity: 0;
-  transform-origin: left center;
-  animation: blur 2s 800ms linear forwards;
-  animation-delay: 2s;
+  background-color: #d4fdff;
 }
 
 img {
-  margin-left: 12em;
+  width: 175px;
 }
 
 .cherry {
+  top: -1000px;
+  left: calc(70% - 80px);
   animation: cherry 700ms linear forwards;
-  top: -1200px;
-  animation-delay: 2s;
-  left: calc(50% - 40px);
-  width: 80px;
   z-index: 10;
 }
 
 .vanilla-fudge {
+  top: -1000px;
+  left: calc(70% - 80px);
   animation: fudge 600ms linear forwards;
-  top: -1200px;
-  animation-delay: 2s;
-  left: calc(50% - 80px);
-  width: 130px;
   z-index: 9;
 }
 
 .chocolate-chip {
+  top: -1000px;
+  left: calc(70% - 70px);
   animation: chocolate-chip 500ms linear forwards;
-  top: -1200px;
-  animation-delay: 2s;
-  left: calc(50% - 70px);
-  width: 130px;
   z-index: 8;
 }
 
 .mint-chip {
+  top: -1000px;
+  left: calc(70% - 90px);
   animation: mint-chip 400ms linear forwards;
-  top: -1200px;
-  animation-delay: 2s;
-  left: calc(50% - 90px);
-  width: 130px;
   z-index: 7;
 }
 
 .cone {
+  top: -1000px;
+  left: calc(70% - 90px);
   animation: cone 300ms linear forwards;
-  top: -1200px;
-  animation-delay: 2s;
-  left: calc(50% - 90px);
-  width: 130px;
   z-index: 11;
 }
 
@@ -117,7 +109,7 @@ img {
 @keyframes fudge {
 
   0% {
-    top: -1200px;
+    top: -1300px;
   }
 
   100% {
@@ -129,7 +121,7 @@ img {
 @keyframes chocolate-chip {
 
   0% {
-    top: -1200px;
+    top: -1400px;
   }
 
   100% {
@@ -141,7 +133,7 @@ img {
 @keyframes mint-chip {
 
   0% {
-    top: -1200px;
+    top: -1500px;
   }
 
   100% {
@@ -153,24 +145,11 @@ img {
 @keyframes cone {
 
   0% {
-    top: -1200px;
+    top: -1600px;
   }
 
   100% {
     top: 320px;
-  }
-
-}
-
-@media only screen and (min-width: 90em) {
-
-  .banner {
-    padding-left: 10em;
-    padding-right: 9em;
-  }
-
-  .banner-content {
-    padding-top: 2em;
   }
 
 }
